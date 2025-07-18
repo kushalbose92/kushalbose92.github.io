@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya K. Joshi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #4a90e2;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: sticky;
+            top: 100px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid #f0f0f0;
+        }
+
+        .profile-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-institution {
+            color: #4a90e2;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #4a90e2;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: #357abd;
+            transform: translateY(-2px);
+        }
+
+        .social-links a.email { background: #e74c3c; }
+        .social-links a.google { background: #db4437; }
+        .social-links a.github { background: #333; }
+        .social-links a.linkedin { background: #0077b5; }
+        .social-links a.twitter { background: #1da1f2; }
+
+        .social-links a.email:hover { background: #c0392b; }
+        .social-links a.google:hover { background: #c23321; }
+        .social-links a.github:hover { background: #24292e; }
+        .social-links a.linkedin:hover { background: #005885; }
+        .social-links a.twitter:hover { background: #1991da; }
+
+        /* Content Area */
+        .content-area {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .intro-text strong {
+            color: #2c3e50;
+        }
+
+        .intro-text a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .intro-text a:hover {
+            text-decoration: underline;
+        }
+
+        .research-interests {
+            margin-top: 2rem;
+        }
+
+        .research-interests h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .research-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .research-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .research-item::before {
+            content: counter(research-counter);
+            counter-increment: research-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #4a90e2;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .research-list {
+            counter-reset: research-counter;
+        }
+
+        .research-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .research-description {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Bottom Sections */
+        .bottom-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-icon {
+            font-size: 1.1rem;
+        }
+
+        .interests-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .interests-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #666;
+        }
+
+        .interests-list li:last-child {
+            border-bottom: none;
+        }
+
+        .interests-list li::before {
+            content: "•";
+            color: #4a90e2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-degree {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .education-degree::before {
+            content: "🎓";
+            font-size: 1rem;
+        }
+
+        .education-institution {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .education-year {
+            color: #4a90e2;
+            font-weight: 500;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .profile-card {
+                position: static;
+            }
+
+            .bottom-sections {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                gap: 1rem;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+        }
+
+        /* Dark theme */
+        body.dark-theme {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .dark-theme header {
+            background: #2d2d2d;
+        }
+
+        .dark-theme .profile-card,
+        .dark-theme .content-area,
+        .dark-theme .section-card {
+            background: #2d2d2d;
+            color: #e0e0e0;
+        }
+
+        .dark-theme .logo,
+        .dark-theme .profile-name,
+        .dark-theme .section-title,
+        .dark-theme .research-title,
+        .dark-theme .education-degree {
+            color: #e0e0e0;
+        }
+
+        .dark-theme .profile-title,
+        .dark-theme .research-description,
+        .dark-theme .interests-list li,
+        .dark-theme .education-institution {
+            color: #b0b0b0;
+        }
+
+        .dark-theme .interests-list li {
+            border-bottom-color: #404040;
+        }
+
+        .dark-theme .education-item {
+            border-bottom-color: #404040;
+        }
+
+        .dark-theme .theme-toggle:hover {
+            background-color: #404040;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Chaitanya K. Joshi</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#substack">Substack</a></li>
+                <li><a href="#blog">Old Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv">My CV</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/200x200/4a90e2/ffffff?text=CKJ" alt="Chaitanya K. Joshi" class="profile-image">
+                    <h1 class="profile-name">Chaitanya K. Joshi</h1>
+                    <p class="profile-title">PhD Student</p>
+                    <p class="profile-institution">University of Cambridge, UK</p>
+                    
+                    <div class="social-links">
+                        <a href="mailto:your.email@cam.ac.uk" class="email" title="Email">✉</a>
+                        <a href="#" class="google" title="Google Scholar">G</a>
+                        <a href="#" class="github" title="GitHub">⚡</a>
+                        <a href="#" class="linkedin" title="LinkedIn">in</a>
+                        <a href="#" class="twitter" title="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <div class="content-area">
+                    <div class="intro-text">
+                        <p>I'm Chaitanya, an AI researcher working on Deep Learning for Biomolecule design.</p>
+                        
+                        <p>I'm currently a final year CS PhD student at the University of Cambridge, supervised by <a href="#">Prof. Pietro Liò</a>. I'm supported by the A*STAR National Science Scholarship and Qualcomm Innovation Fellowship. I've previously interned at <a href="#">Prescient Design</a>, <a href="#">Genentech</a> and <a href="#">FAIR Chemistry</a>, <a href="#">Meta AI</a>, as well as been a visitor at Phil Holliger's group at the <a href="#">MRC Laboratory of Molecular Biology</a>.</p>
+                    </div>
+
+                    <div class="research-interests">
+                        <h3>Research interests:</h3>
+                        <ol class="research-list">
+                            <li class="research-item">
+                                <div class="research-title">Deep learning for molecular modelling:</div>
+                                <div class="research-description">Modelling 3D molecular structure, from theoretical foundations to foundation models, including <a href="#">the Hitchhiker's Guide to Geometric GNNs</a> and <a href="#">All-atom Diffusion Transformers</a>.</div>
+                            </li>
+                            <li class="research-item">
+                                <div class="research-title">Applications to RNA design:</div>
+                                <div class="research-description">Building and experimentally validating <a href="#">gRNAde</a>, a generative inverse design toolkit for RNA structure.</div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-sections">
+                <div class="section-card">
+                    <h2 class="section-title">
+                        <span class="section-icon">🔬</span>
+                        Interests
+                    </h2>
+                    <ul class="interests-list">
+                        <li>Geometric Deep Learning</li>
+                        <li>Generative Modelling</li>
+                        <li>RNA Design</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">
+                        <span class="section-icon">🎓</span>
+                        Education
+                    </h2>
+                    <div class="education-item">
+                        <div class="education-degree">PhD in Computer Science, <span class="education-year">2022 – 2025</span></div>
+                        <div class="education-institution">University of Cambridge, UK</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-degree">B.Eng. in Computer Science, <span class="education-year">2015 – 2019</span></div>
+                        <div class="education-institution">Nanyang Technological University, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
+            
+            // Save theme preference
+            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        }
+
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-menu');
+        }
+
+        // Load saved theme
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.theme-toggle').textContent = '☀️';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const navLinks = document.querySelector('.nav-links');
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navLinks.classList.remove('mobile-menu');
+            }
+        });
+    </script>
+</body>
+</html>
