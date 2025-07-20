@@ -23,18 +23,18 @@ repository               : "kushalbose92/kushalbose92.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "he/him"
+  name             : "Kushal Bose (He/Him)"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : "Indian Statistical Institute"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "kushalbose92@gmail.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=CifdghYAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
