@@ -47,4 +47,4 @@ Example: editing a Markdown file for a talk
 
 For more info
 ------
---!>
+-->
