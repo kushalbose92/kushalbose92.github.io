@@ -13,8 +13,8 @@ I’m currently a final year CS PhD student at the Indian Statistical Institute,
 
 News
 =====
-1. Our joint work titled *FairSplit: Mitigating Bias in Graph Neural Networks through Sensitivity-based Edge Partitioning * is accepted in the ACM CIKM 2025 in the short research paper category track.
-2. Our joint work titled *Can Graph Neural Networks Tackle Heterophily? Yes, With a Label-Guided Graph Rewiring Approach!* got accepted in IEEE Transaction in Neural Networks and Learning Systems  (TNNLS).  
+1. Our joint work titled **FairSplit: Mitigating Bias in Graph Neural Networks through Sensitivity-based Edge Partitioning** accepted in the ACM CIKM 2025 in the short research paper category track.
+2. Our joint work titled **Can Graph Neural Networks Tackle Heterophily? Yes, With a Label-Guided Graph Rewiring Approach!** accepted in IEEE Transactions on Neural Networks and Learning Systems  (TNNLS).  
 
 Research Interests
 ======
