@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Kushal Bose, Senior Research Fellow, Indian Statistical Institute"
+title: "Publicationa"
 author_profile: true
 redirect_from: 
   - /mypub/
-  - /mypub.md
+  - /mypub.html
 ---
 
 
