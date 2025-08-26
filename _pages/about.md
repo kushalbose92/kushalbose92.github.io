@@ -11,10 +11,11 @@ I’m Kushal, an AI researcher working on Deep Learning on Graphs. I am also int
 
 I’m currently a final year CS PhD student at the Indian Statistical Institute, supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/). During my Phd tenure, I have worked on various problems in long-range interactions like Oversmoothing, Oversqaushing, and Graph Heterophily.
 
-News
+News!
 =====
 1. **[August 2025]** Nominated as Reviewer in the 3rd Learning on Graph Conference (LoG) for the Main Track. 
 1. **[August 2025]** Our joint work titled **FairSplit: Mitigating Bias in Graph Neural Networks through Sensitivity-based Edge Partitioning** accepted in the ACM CIKM 2025 in the short research paper track.
+1. **[July 2025]** Nominated as Reviewer for NeurIPS, 2025 for Position Track. 
 1. **[April 2025]** Our joint work titled **Can Graph Neural Networks Tackle Heterophily? Yes, With a Label-Guided Graph Rewiring Approach!** accepted in IEEE Transactions on Neural Networks and Learning Systems  (TNNLS).  
 
 Research Interests
