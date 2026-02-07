@@ -13,6 +13,7 @@ I’m currently a final year CS PhD student at the Indian Statistical Institute,
 
 News!
 ======
+1. **[February 2026]** Our joint work titled **Learning from Heterophilic Graphs: A Spectral Theory Perspective on the Impact of Self-Loops and Parallel Edges** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[August 2025]** Nominated as Reviewer in the 4th Learning on Graph Conference (LoG) for the Main Track. 
 1. **[August 2025]** Our joint work titled **FairSplit: Mitigating Bias in Graph Neural Networks through Sensitivity-based Edge Partitioning** accepted in the ACM CIKM 2025 in the short research paper track.
 1. **[July 2025]** Nominated as Reviewer for NeurIPS, 2025 for Position Track. 
