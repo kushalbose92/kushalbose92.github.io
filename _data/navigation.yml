@@ -25,6 +25,9 @@ main:
     
   - title: "CV"
     url: /mycv/
+
+  - title: "Neulearn.ai"
+    url: /myorg/  
     
   # - title: "CV"
   #   url: /cv-json/
