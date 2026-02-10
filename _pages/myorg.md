@@ -14,4 +14,6 @@ The following papers can act as a good starter pack to accomplish the mission.
 4. Memory-Based Sequential Attention [[paper]](https://proceedings.mlr.press/v226/stock24a/stock24a.pdf)
 5. A Path Towards Autonomous Machine Intelligence (JEPA) [[paper]](https://openreview.net/pdf?id=BZ5a1r-kVsf)
 
+Connect with us if you want to contribute to this mission. 
+
 
