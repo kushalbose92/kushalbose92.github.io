@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I’m Kushal, an AI researcher working on Deep Learning on Graphs. I am also interested in handling data in non-Euclidean spaces. 
+I’m Kushal, an AI researcher working on Deep Learning on Graphs. I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions like Oversmoothing, Oversqaushing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my Phd tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
 
-I’m currently a final year CS PhD student at the Indian Statistical Institute, supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/). During my Phd tenure, I have worked on various problems in long-range interactions like Oversmoothing, Oversqaushing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. 
+On April 12, 2026, I was awarded the Doctor of Philosophy in Computer Science by Indian Statistical Institute, in the presence of [Prof. Jaya Sil](https://www.iiests.ac.in/IIEST/Faculty/cs-js) as the external examiner. 
 
 News!
 ======
