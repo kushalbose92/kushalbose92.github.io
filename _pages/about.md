@@ -7,12 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I’m Kushal, an AI researcher working on Deep Learning on Graphs. I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions like Oversmoothing, Oversqaushing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my Phd tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
+I’m Kushal, an AI researcher working on deep learning for graphs. I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions, such as Oversmoothing, Oversquashing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my Phd tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
 
-On April 12, 2026, I was awarded the Doctor of Philosophy in Computer Science by Indian Statistical Institute, in the presence of [Prof. Jaya Sil](https://www.iiests.ac.in/IIEST/Faculty/cs-js) as the external examiner. 
+On April 13, 2026, I was awarded the Doctor of Philosophy in Computer Science by Indian Statistical Institute, in the presence of [Prof. Jaya Sil](https://www.iiests.ac.in/IIEST/Faculty/cs-js) as the external examiner. 
 
 News!
 ======
+1. **[April 2026]** Our joint work titled **AffNet: Designing Multi-headed Affinity and Adaptive Thresholding for Unsupervised Homophily Estimation** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[February 2026]** Our joint work titled **Learning from Heterophilic Graphs: A Spectral Theory Perspective on the Impact of Self-Loops and Parallel Edges** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[August 2025]** Nominated as Reviewer in the 4th Learning on Graph Conference (LoG) for the Main Track. 
 1. **[August 2025]** Our joint work titled **FairSplit: Mitigating Bias in Graph Neural Networks through Sensitivity-based Edge Partitioning** accepted in the ACM CIKM 2025 in the short research paper track.
