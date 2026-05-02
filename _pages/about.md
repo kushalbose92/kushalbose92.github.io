@@ -13,6 +13,7 @@ On April 13, 2026, I was awarded the Doctor of Philosophy in Computer Science by
 
 News!
 ======
+1. **[May 2026]** Our joint work titled **A New Framework for Convex Clustering in Kernel Spaces: Finite Sample Bounds, Consistency and Performance Insights** accepted in International Joint Conference on Artificial Intelligence, 2026 (IJCAI CORE A*)
 1. **[April 2026]** Our joint work titled **AffNet: Designing Multi-headed Affinity and Adaptive Thresholding for Unsupervised Homophily Estimation** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[February 2026]** Our joint work titled **Learning from Heterophilic Graphs: A Spectral Theory Perspective on the Impact of Self-Loops and Parallel Edges** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[August 2025]** Nominated as Reviewer in the 4th Learning on Graph Conference (LoG) for the Main Track. 
