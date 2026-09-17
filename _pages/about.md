@@ -1,18 +1,19 @@
 ---
 permalink: /
-title: "Kushal Bose, Senior Research Fellow, Indian Statistical Institute"
+title: "Kushal Bose, Postdoctoral researcher, ELLIS Institute Finland / Åbo Akademi University"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m Kushal, an AI researcher working on deep learning for graphs. I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions, such as Oversmoothing, Oversquashing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my Phd tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
+I’m Kushal, an AI researcher working on deep learning for graphs. I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions, such as Oversmoothing, Oversquashing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my PhD tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
 
-On April 13, 2026, I was awarded the Doctor of Philosophy in Computer Science by Indian Statistical Institute, in the presence of [Prof. Jaya Sil](https://www.iiests.ac.in/IIEST/Faculty/cs-js) as the external examiner. 
+On April 13, 2026, I was awarded the Doctor of Philosophy in Computer Science by the Indian Statistical Institute, in the presence of [Prof. Jaya Sil](https://www.iiests.ac.in/IIEST/Faculty/cs-js) as the external examiner. 
 
 News!
 ======
+1. **[September 2026]** I have joined as a postdoctoral researcher at the ELLIS Institute Finland / Åbo Akademi University. 
 1. **[May 2026]** Our joint work titled **A New Framework for Convex Clustering in Kernel Spaces: Finite Sample Bounds, Consistency and Performance Insights** accepted in International Joint Conference on Artificial Intelligence, 2026 (IJCAI CORE A*)
 1. **[April 2026]** Our joint work titled **AffNet: Designing Multi-headed Affinity and Adaptive Thresholding for Unsupervised Homophily Estimation** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
 1. **[February 2026]** Our joint work titled **Learning from Heterophilic Graphs: A Spectral Theory Perspective on the Impact of Self-Loops and Parallel Edges** accepted in IEEE Transactions on Artificial Intelligence (IEEE TAI).
