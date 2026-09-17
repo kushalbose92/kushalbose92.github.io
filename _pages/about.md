@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m Kushal, an AI researcher working on deep learning for graphs. Currently, I am pursuing my postdoctoral research under [Prof. Michael Cochez](https://scholar.google.com/citations?user=JuZrOtoAAAAJ&hl=en) at Åbo Akademi University, a member university of the pan-European ELLIS network.  
+I’m Kushal, an AI researcher working on deep learning for graphs. Currently, I am pursuing my postdoctoral research under [Prof. Michael Cochez](https://scholar.google.com/citations?user=JuZrOtoAAAAJ&hl=en) at Åbo Akademi University, a member university of the pan-European ELLIS network. I am currently working on different problems in Knowledge Graphs and Neurosymbolic Reasoning. 
 
 I am also interested in handling data in non-Euclidean spaces. My research experience includes various problems in long-range interactions, such as Oversmoothing, Oversquashing, and Graph Heterophily. I have also explored the domain of Graph Transformers and various Positional Encodings. During my PhD tenure, I was supervised by [Prof. Swagatam Das](https://www2.isical.ac.in/~swagatam.das/).
 
@@ -30,6 +30,7 @@ Research Interests
 2. Graph Transformers and Positional Encodings
 3. Oversmoothing and Oversquashing
 4. Graph Fairness
+5. Knowledge Graphs and Neurosymbolic Reasoning
 
 <!--
 Getting started
